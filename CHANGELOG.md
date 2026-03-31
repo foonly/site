@@ -1,6 +1,21 @@
 # Changelog
 
-## 1.1.0
+## 1.2.0 (2026-04-01)
+
+#### Features
+- content: Update personal introduction and project motivation (0c90e1a)
+- projects: Extract project card into partial and update date formatting (3ee4468)
+
+#### Bug Fixes
+- bookmarks: Correct typo in project description (725776b)
+- content: Correct typo in blog post title (a20e7f1)
+- config: Change language code from en-uk to en (f90fd9f)
+
+#### Documentation
+- Add foondot project rationale (b90244d)
+- Add README file for the personal website (33eb56d)
+
+## v1.1.0 (2026-03-31)
 
 #### Features
 - Add version file (5da165f)
