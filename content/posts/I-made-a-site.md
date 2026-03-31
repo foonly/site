@@ -1,5 +1,5 @@
 +++
-title = 'I made a new site with Hugo'
+title = 'I made a site with Hugo'
 date = 2026-03-31T20:00:00+03:00
 draft = false
 tags = ['hugo', 'web']
@@ -11,6 +11,6 @@ I don't really use social media, and I believe very strongly in the idea of the 
 
 I decided to see if I can create a site in hugo without writing any code. I used Github Copilot and prompted it to make a site with a blog and a projects section. It worked quite well, it built up a layout according to my loose specifications, and it even generated some example content, in case you're not familiar with Markdown.
 
-I understand that working with static site generators might still not be very user friendly for non-technical users, but if you're ready to experiment a bit, you can techincally make a site in hugo with auto publishing without knowing any HTML, CSS, or how to setup github actions. You just need to know how to write markdown files and commit them to a git repository.
+I understand that working with static site generators might still not be very user friendly for non-technical users, but if you're ready to experiment a bit, you can technically make a site in hugo with auto publishing without knowing any HTML, CSS, or how to setup github actions. You just need to know how to write markdown files and commit them to a git repository.
 
 Having said that, I have done some cleanup and tweaks of the generated code, so I can't say that the site is entirely AI generated. But the result I got was quite usable, and there is no reason you couldn't do those tweaks by prompting as well.
