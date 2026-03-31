@@ -4,15 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwindcss -i assets/css/input.css -o assets/css/main.css -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "postcss --verbose assets/css/*.css --dir public/css --watch",
+    "build": "hugo && postcss --verbose assets/css/*.css --dir public/css",
+    "prettier": "prettier --write src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "10.4.16",
-    "postcss": "8.4.30",
-    "tailwindcss": "3.3.3"
+    "postcss": "8.4.30"
+  },
+  "packageManager": "pnpm@8.15.8+sha256.691fe176eea9a8a80df20e4976f3dfb44a04841ceb885638fe2a26174f81e65e",
+  "dependencies": {
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^9.6.0",
+    "prettier": "^3.3.3"
   }
 }

@@ -2,17 +2,20 @@ baseURL = 'https://foonly.dev/'
 languageCode = 'en-us'
 title = 'foonly.dev'
 
+[params]
+  description = 'Personal site and blog'
+
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
 weight = 10
 
 [[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
+name = 'Projects'
+pageRef = '/projects'
 weight = 20
 
 [[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
+name = 'Posts'
+pageRef = '/posts'
 weight = 30

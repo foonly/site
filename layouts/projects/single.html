@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <article>
+    <header class="single-header">
+      <h1>{{ .Title }}</h1>
+      <div class="single-meta">
+        {{- with .Params.status }}
+        <span class="status-badge status-{{ . }}">{{ . }}</span>
+        {{- end }}
+        {{- with .Params.tags }}
+        <ul class="tag-list">
+          {{- range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{- end }}
+      </div>
+      {{- if or .Params.repo .Params.live }}
+      <div class="project-links" style="margin-top: var(--space-4);">
+        {{- with .Params.repo }}<a href="{{ . }}">Repository</a>{{- end }}
+        {{- with .Params.live }}<a href="{{ . }}">Live site</a>{{- end }}
+      </div>
+      {{- end }}
+    </header>
+    <div class="single-content">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

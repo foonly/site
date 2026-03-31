@@ -1,10 +1,38 @@
 +++
-title = 'Post 2'
+title = 'CSS custom properties for theming'
 date = 2023-02-15T10:00:00-07:00
 draft = false
-tags = ['red','green']
+tags = ['css', 'web']
 +++
 
-Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
+CSS custom properties (often called CSS variables) are one of the most useful features added to CSS in recent years. They unlock a clean approach to theming — especially dark/light mode — without JavaScript or preprocessors.
 
-Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.
+## Defining tokens
+
+Declare properties on `:root` so they're available everywhere:
+
+```css
+:root {
+  --color-bg:   #f5f5f4;
+  --color-text: #1c1917;
+}
+```
+
+## Responding to preferences
+
+Use a media query to swap values for dark mode:
+
+```css
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:   #1c1917;
+    --color-text: #f5f5f4;
+  }
+}
+```
+
+Now every element that uses `var(--color-bg)` switches automatically. No class toggling, no runtime cost, no flash of wrong theme.
+
+## Keeping it minimal
+
+The trick is to define enough tokens that your UI is consistent, but not so many that changes become tedious. A handful of colour roles (background, surface, border, text, text-muted, accent) plus a few spacing and radius values covers most cases.
