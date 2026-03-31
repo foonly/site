@@ -8,7 +8,7 @@
     <li class="post-item">
       <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
       <div class="post-meta">
-        <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
+        <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format "02 January 2006" }}</time>
         {{- with .GetTerms "tags" }}
         <ul class="tag-list">
           {{- range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}

@@ -1,26 +1,12 @@
 {{ define "main" }}
-  <div class="page-header">
-    <h1>{{ .Title }}</h1>
-    {{- with .Content }}<div>{{ . }}</div>{{- end }}
-  </div>
-  <div class="project-grid">
-    {{- range .Pages.ByDate.Reverse }}
-    <article class="project-card">
-      <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-      <p>{{ .Params.description | default .Summary }}</p>
-      {{- with .Params.tags }}
-      <ul class="tag-list">
-        {{- range . }}<li>{{ . }}</li>{{ end }}
-      </ul>
-      {{- end }}
-      <div class="project-links">
-        {{- with .Params.repo }}<a href="{{ . }}">Repository</a>{{- end }}
-        {{- with .Params.live }}<a href="{{ . }}">Live site</a>{{- end }}
-        {{- with .Params.status }}
-        <span class="status-badge status-{{ . }}">{{ . }}</span>
-        {{- end }}
-      </div>
-    </article>
-    {{- end }}
-  </div>
+<div class="page-header">
+	<h1>{{ .Title }}</h1>
+	{{- with .Content }}
+	<div>{{ . }}</div>
+	{{- end }}
+</div>
+<div class="project-grid">
+	{{- range .Pages.ByDate.Reverse }} {{ partial "project-card.html" . }} {{- end
+	}}
+</div>
 {{ end }}
