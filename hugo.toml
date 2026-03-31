@@ -1,5 +1,5 @@
 baseURL = 'https://foonly.dev/'
-languageCode = 'en-uk'
+languageCode = 'en'
 title = 'foonly.dev'
 
 [params]
