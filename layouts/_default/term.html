@@ -1,18 +1,18 @@
 {{ define "main" }}
-  <section class="about">
+  <div class="page-header">
     <h1>{{ .Title }}</h1>
-    <div class="about-lead">{{ .Content }}</div>
-  </section>
+  </div>
 
-  {{- $posts := where site.RegularPages "Section" "posts" | first 3 }}
+  {{- $posts    := where .Pages "Section" "posts" }}
+  {{- $projects := where .Pages "Section" "projects" }}
+
   {{- if $posts }}
   <section class="section-preview">
     <div class="section-preview-header">
-      <h2>Recent posts</h2>
-      <a href="{{ "/posts" | relURL }}" class="see-all">All posts →</a>
+      <h2>Posts</h2>
     </div>
     <ul class="post-list">
-      {{- range $posts }}
+      {{- range $posts.ByDate.Reverse }}
       <li class="post-item">
         <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
         <div class="post-meta">
@@ -24,12 +24,10 @@
   </section>
   {{- end }}
 
-  {{- $projects := where site.RegularPages "Section" "projects" | first 4 }}
   {{- if $projects }}
   <section class="section-preview">
     <div class="section-preview-header">
       <h2>Projects</h2>
-      <a href="{{ "/projects" | relURL }}" class="see-all">All projects →</a>
     </div>
     <div class="project-grid">
       {{- range $projects }}
@@ -38,9 +36,16 @@
         <p>{{ .Params.description | default .Summary }}</p>
         {{- with .Params.tags }}
         <ul class="tag-list">
-          {{- range . }}<li><a href="{{ "/projects" | relURL }}">{{ . }}</a></li>{{ end }}
+          {{- range . }}<li>{{ . }}</li>{{ end }}
         </ul>
         {{- end }}
+        <div class="project-links">
+          {{- with .Params.repo }}<a href="{{ . }}">Repository</a>{{- end }}
+          {{- with .Params.live }}<a href="{{ . }}">Live site</a>{{- end }}
+          {{- with .Params.status }}
+          <span class="status-badge status-{{ . }}">{{ . }}</span>
+          {{- end }}
+        </div>
       </article>
       {{- end }}
     </div>

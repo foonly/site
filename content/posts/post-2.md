@@ -1,7 +1,7 @@
 +++
 title = 'CSS custom properties for theming'
 date = 2023-02-15T10:00:00-07:00
-draft = false
+draft = true
 tags = ['css', 'web']
 +++
 
@@ -13,7 +13,7 @@ Declare properties on `:root` so they're available everywhere:
 
 ```css
 :root {
-  --color-bg:   #f5f5f4;
+  --color-bg: #f5f5f4;
   --color-text: #1c1917;
 }
 ```
@@ -25,7 +25,7 @@ Use a media query to swap values for dark mode:
 ```css
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg:   #1c1917;
+    --color-bg: #1c1917;
     --color-text: #f5f5f4;
   }
 }

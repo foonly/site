@@ -1,6 +1,11 @@
 {{ define "main" }}
   <article>
     <header class="single-header">
+      {{ with .Params.image }}
+        {{ with $.Resources.GetMatch . }}
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="article-image">
+        {{ end }}
+      {{ end }}
       <h1>{{ .Title }}</h1>
       <div class="single-meta">
         <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>

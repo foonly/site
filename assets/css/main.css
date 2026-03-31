@@ -2,22 +2,22 @@
    Custom properties — all theme tokens live here
 ----------------------------------------------- */
 :root {
-  --color-bg:        #f5f5f4;
+  --color-bg: #f5f5f4;
   --color-bg-subtle: #e7e5e4;
-  --color-surface:   #ffffff;
-  --color-border:    #d6d3d1;
-  --color-text:      #1c1917;
-  --color-text-muted:#78716c;
-  --color-accent:    #0d6efd;
+  --color-surface: #ffffff;
+  --color-border: #d6d3d1;
+  --color-text: #1c1917;
+  --color-text-muted: #78716c;
+  --color-accent: #0d6efd;
   --color-accent-hover: #0a58ca;
-  --color-tag-bg:    #e7e5e4;
-  --color-tag-text:  #44403c;
+  --color-tag-bg: #e7e5e4;
+  --color-tag-text: #44403c;
 
   --font-sans: system-ui, sans-serif;
   --font-mono: ui-monospace, monospace;
 
   --radius-sm: 0.25rem;
-  --radius:    0.5rem;
+  --radius: 0.5rem;
   --radius-lg: 0.75rem;
 
   --space-1: 0.25rem;
@@ -29,13 +29,13 @@
   --space-12: 3rem;
   --space-16: 4rem;
 
-  --text-sm:   0.875rem;
+  --text-sm: 0.875rem;
   --text-base: 1rem;
-  --text-lg:   1.125rem;
-  --text-xl:   1.25rem;
-  --text-2xl:  1.5rem;
-  --text-3xl:  1.875rem;
-  --text-4xl:  2.25rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
 
   --measure: 68ch;
   --max-width: 56rem;
@@ -45,23 +45,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg:        #1c1917;
+    --color-bg: #1c1917;
     --color-bg-subtle: #292524;
-    --color-surface:   #292524;
-    --color-border:    #44403c;
-    --color-text:      #f5f5f4;
-    --color-text-muted:#a8a29e;
-    --color-accent:    #60a5fa;
+    --color-surface: #292524;
+    --color-border: #44403c;
+    --color-text: #f5f5f4;
+    --color-text-muted: #a8a29e;
+    --color-accent: #60a5fa;
     --color-accent-hover: #93c5fd;
-    --color-tag-bg:    #44403c;
-    --color-tag-text:  #d6d3d1;
+    --color-tag-bg: #44403c;
+    --color-tag-text: #d6d3d1;
   }
 }
 
 /* -----------------------------------------------
    Reset & base
 ----------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -80,7 +82,8 @@ body {
   flex-direction: column;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -89,15 +92,26 @@ img, video {
 /* -----------------------------------------------
    Typography
 ----------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
   margin-block: 0 var(--space-4);
   text-wrap: balance;
 }
 
-h1 { font-size: var(--text-3xl); }
-h2 { font-size: var(--text-2xl); }
-h3 { font-size: var(--text-xl); }
+h1 {
+  font-size: var(--text-3xl);
+}
+h2 {
+  font-size: var(--text-2xl);
+}
+h3 {
+  font-size: var(--text-xl);
+}
 
 p {
   margin-block: 0 var(--space-4);
@@ -114,7 +128,8 @@ a:hover {
   color: var(--color-accent-hover);
 }
 
-code, pre {
+code,
+pre {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
 }
@@ -217,7 +232,9 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .main-nav a { transition: none; }
+  .main-nav a {
+    transition: none;
+  }
 }
 
 .main-nav a:hover,
@@ -289,24 +306,24 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
-}
 
-.post-item a {
-  font-size: var(--text-lg);
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--color-text);
-}
+  a {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
 
-.post-item a:hover {
-  color: var(--color-accent);
-}
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
 
-.post-item .post-meta {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  flex-wrap: wrap;
+  .post-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
 }
 
 /* -----------------------------------------------
@@ -326,38 +343,41 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+  &:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 2px 12px -4px color-mix(in srgb, var(--color-accent) 20%, transparent);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: var(--text-lg);
+
+    a {
+      color: var(--color-text);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    flex: 1;
+    max-width: 100%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .project-card { transition: none; }
-}
-
-.project-card:hover {
-  border-color: var(--color-accent);
-  box-shadow: 0 2px 12px -4px color-mix(in srgb, var(--color-accent) 20%, transparent);
-}
-
-.project-card h3 {
-  margin: 0;
-  font-size: var(--text-lg);
-}
-
-.project-card h3 a {
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-.project-card h3 a:hover {
-  color: var(--color-accent);
-}
-
-.project-card p {
-  margin: 0;
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
-  flex: 1;
-  max-width: 100%;
+  .project-card {
+    transition: none;
+  }
 }
 
 .project-links {
@@ -367,8 +387,21 @@ main {
 }
 
 /* -----------------------------------------------
-   Tags
+   Post tags (used in single post header)
 ----------------------------------------------- */
+.post-tags {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.post-tags-label {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}
+
 .tag-list {
   list-style: none;
   margin: 0;
@@ -457,11 +490,26 @@ main {
   letter-spacing: 0.05em;
 }
 
-.status-active  { background: #d1fae5; color: #065f46; }
-.status-wip     { background: #fef3c7; color: #92400e; }
-.status-archived{ background: var(--color-bg-subtle); color: var(--color-text-muted); }
+.status-active {
+  background: #d1fae5;
+  color: #065f46;
+}
+.status-wip {
+  background: #fef3c7;
+  color: #92400e;
+}
+.status-archived {
+  background: var(--color-bg-subtle);
+  color: var(--color-text-muted);
+}
 
 @media (prefers-color-scheme: dark) {
-  .status-active  { background: #064e3b; color: #6ee7b7; }
-  .status-wip     { background: #451a03; color: #fcd34d; }
+  .status-active {
+    background: #064e3b;
+    color: #6ee7b7;
+  }
+  .status-wip {
+    background: #451a03;
+    color: #fcd34d;
+  }
 }

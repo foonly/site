@@ -1,8 +1,9 @@
 +++
 title = 'Static sites and why I still like them'
 date = 2023-03-15T11:00:00-07:00
-draft = false
+draft = true
 tags = ['web', 'hugo']
+image = 'Boardgame.jpg'
 +++
 
 There's something satisfying about a website that's just files. No moving parts to keep patched, no database to back up, no server process that can crash at 2 am.
