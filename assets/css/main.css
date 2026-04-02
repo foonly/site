@@ -20,7 +20,7 @@
 	--color-status-archived-bg: var(--color-bg-subtle);
 	--color-status-archived-text: var(--color-text-muted);
 
-	--font-sans: ui-sans-serif, sans-serif;
+	--font-sans: system-ui, sans-serif;
 	--font-mono: ui-monospace, monospace;
 
 	--radius-sm: 0.25rem;
@@ -348,6 +348,7 @@ main {
 }
 
 .project-card {
+	position: relative;
 	background: var(--color-surface);
 	border: 1px solid var(--color-border);
 	border-radius: var(--radius-lg);
@@ -375,6 +376,15 @@ main {
 			&:hover {
 				color: var(--color-accent);
 			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 
@@ -395,8 +405,16 @@ main {
 
 .project-links {
 	display: flex;
-	gap: var(--space-3);
+	align-items: center;
 	font-size: var(--text-sm);
+
+	a {
+		z-index: 2;
+		padding: var(--space-2);
+	}
+	span {
+		margin-right: var(--space-2);
+	}
 }
 
 /* -----------------------------------------------
