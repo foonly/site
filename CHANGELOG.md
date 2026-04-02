@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.2.0 (2026-04-01)
+## 1.3.0 (2026-04-02)
+
+#### Features
+- css: Improve project card link accessibility (b8e2c6b)
+- theme: Update CSS variables and add favicon (431fed3)
+
+## v1.2.0 (2026-04-01)
 
 #### Features
 - content: Update personal introduction and project motivation (0c90e1a)
