@@ -4,7 +4,7 @@
 	{{- with .Params.tags }}
 	<ul class="tag-list">
 		{{- range . }}
-		<li>{{ . }}</li>
+		<li><a href="{{ (site.GetPage (printf "/tags/%s" (urlize .))).RelPermalink }}">{{ . }}</a></li>
 		{{ end }}
 	</ul>
 	{{- end }}
