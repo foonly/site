@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.4.0 (2026-04-06)
+## 1.5.0 (2026-04-08)
+
+#### Features
+- foonver: Add foonver configuration file (9779309)
+- projects: Update bookmarks project details (fe41d2e)
+
+## v1.4.0 (2026-04-06)
 
 #### Features
 - projects: Add timer project page (bd2c55d)
