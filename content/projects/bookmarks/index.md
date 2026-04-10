@@ -39,4 +39,4 @@ This is a bit of extra protection. It's sent to the server with your first sync 
 
 ## What's next?
 
-I will probably try to tweak the usability and look of the app, and maybe add some more features. If anyone is using it, and has any ideas for improvements or find any bugs, please open an [issue](https://github.com/foonly/bookmarks/issues) on Github.
+I will probably try to tweak the usability and look of the app, and maybe add some more features. If anyone is using it, and has any ideas for improvements or find any bugs, please open an [issue](https://github.com/foonly/bookmarks/issues) on GitHub.
