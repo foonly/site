@@ -1,6 +1,21 @@
 # Changelog
 
-## 1.3.0 (2026-04-02)
+## 1.5.0 (2026-04-08)
+
+#### Features
+- foonver: Add foonver configuration file (9779309)
+- projects: Update bookmarks project details (fe41d2e)
+
+## v1.4.0 (2026-04-06)
+
+#### Features
+- projects: Add timer project page (bd2c55d)
+- projects: Link tags to tag pages and refactor project card (17ec15c)
+
+#### Maintenance
+- Add .hugo_build.lock to .gitignore (607c82a)
+
+## v1.3.0 (2026-04-02)
 
 #### Features
 - css: Improve project card link accessibility (b8e2c6b)
