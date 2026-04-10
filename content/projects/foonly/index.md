@@ -9,7 +9,7 @@ tags = ['hugo', 'css']
 status = 'active'
 +++
 
-The site you're reading right now. Built with [Hugo](https://gohugo.io) and plain CSS — no CSS or Javascript frameworks, no build complexity.
+The site you're reading right now. Built with [Hugo](https://gohugo.io) and plain CSS — no CSS or JavaScript frameworks, no build complexity.
 
 Goals for this site:
 

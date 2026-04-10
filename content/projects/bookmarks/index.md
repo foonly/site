@@ -9,7 +9,7 @@ tags = ['typescript', 'web', 'bookmarks']
 status = 'wip'
 +++
 
-This is a browser based bookmarks manager that allows you to store a list of bookmarks locally. It's still very much a work in progress, and I'm listing it here to shame myself into working on it more actively.
+This is a browser-based bookmarks manager that allows you to store a list of bookmarks locally. It's still very much a work in progress, and I'm listing it here to shame myself into working on it more actively.
 
 ## What it does?
 

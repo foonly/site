@@ -1,5 +1,5 @@
 +++
-title = 'Thougts about AI coding'
+title = 'Thoughts about AI coding'
 date = 2026-04-10T00:00:00+03:00
 tags = ['coding', 'ai']
 +++
@@ -12,11 +12,11 @@ There are some patterns that I notice repeating in all projects where the develo
 
 ## Tweaking the code
 
-After the initial version is done, you usually start testing to see if everything works as expected. At this point you ususally find a lot of design decisions that needs improvement or problems or even bugs that needs fixing.
+After the initial version is done, you usually start testing to see if everything works as expected. At this point you usually find a lot of design decisions that need improvement or problems or even bugs that need fixing.
 
 At this point, prompting is still quite efficient. If you have a good understanding of the design, you can improve things a lot with good prompts.
 
-But here the problems start creeping in. The more you work like this, the less you understand the project as a whole. Bigger, more difficult to find bugs can start appearing, not even because the AI makes mistakes (which it can), but because neither you nor the AI unserstand the full scope of the project.
+But here the problems start creeping in. The more you work like this, the less you understand the project as a whole. Bigger, more difficult to find bugs can start appearing, not even because the AI makes mistakes (which it can), but because neither you nor the AI understand the full scope of the project.
 
 ## The neverending polish
 
@@ -32,10 +32,10 @@ The big question in the end is probably if it's more efficient to code with AI? 
 
 ### Pros
 
-- Prototyping and proof on concept code is insanely fast. This makes your projects easier to sell, to project managers, customers, and even to your self.
+- Prototyping and proof of concept code is insanely fast. This makes your projects easier to sell, to project managers, customers, and even to yourself.
 - You don't have to know / learn everything. Setting up projects is so much faster, because you don't have to check what that specific setting was called.
 - It's a good tool to learn new things.
-- I think all in all, it is faster that writing the code yourself.
+- I think all in all, it is faster than writing the code yourself.
 
 ### Cons
 
@@ -46,6 +46,6 @@ The big question in the end is probably if it's more efficient to code with AI? 
 
 ## What does all this mean?
 
-I'm not quite sure what conclusions to draw from this. Is it a good thing or a bad thing? I don't think AI will make the world a better place, it's bad for the environment, it further transfers power to a ever shrinking group of people. But it also allows people to make things more easily. It's been very good for my hobby projects, you can actually get results even if you only have an hour or two to work on something.
+I'm not quite sure what conclusions to draw from this. Is it a good thing or a bad thing? I don't think AI will make the world a better place, it's bad for the environment, it further transfers power to an ever shrinking group of people. But it also allows people to make things more easily. It's been very good for my hobby projects, you can actually get results even if you only have an hour or two to work on something.
 
-I think we need to take care not to get too dependent on the companies pushing this to us, but there no closing this box anymore, so we need to make the best of it.
+I think we need to take care not to get too dependent on the companies pushing this to us, but there is no closing this box anymore, so we need to make the best of it.

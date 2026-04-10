@@ -1,5 +1,5 @@
 +++
-title = 'foonlys hierachical timer'
+title = "foonly's hierarchical timer"
 date = 2024-03-25T00:00:00+00:00
 draft = false
 description = 'A hierarchical timer application that requires very little setup.'
