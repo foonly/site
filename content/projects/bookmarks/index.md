@@ -13,7 +13,7 @@ This is a browser-based bookmarks manager that allows you to store a list of boo
 
 ## Why a bookmarks manager?
 
-I noticed that modern browsers are moving away from bookmarks, probably because people are used to search for things. Some things are however not easily searchable, or you just need them often, so I figured I would make a place to store bookmarks.
+I noticed that modern browsers are moving away from bookmarks, probably because people are used to searching for things. Some things are however not easily searchable, or you just need them often, so I figured I would make a place to store bookmarks.
 
 ## What does it do?
 
@@ -27,16 +27,16 @@ The sync code consists of 3 parts: The ID, an encryption key, and a shared secre
 
 ### The ID
 
-This part is not really a secret, even though it's not easily readable either. It's sent with every sync request, and identify you to the sync server. But those requests are protected with TLS, so they shouldn't be easily accessible.
+This part is not really a secret, even though it's not easily readable either. It's sent with every sync request, and identifies you to the sync server. But those requests are protected with TLS, so they shouldn't be easily accessible.
 
 ### The encryption key
 
-This part never leave your devices. It's used to encrypt your data with AES-GCM before sending it to the sync server, and decrypt it after you read it back.
+This part never leaves your devices. It's used to encrypt your data with AES-GCM before sending it to the sync server, and decrypt it after you read it back.
 
 ### The shared secret
 
-This is a bit of extra protection. It's sent to the server with your first sync request, but should then never be sent again, and there is no way to read it back from the server or ever change it. But every upload to the server is timestamped, and the timestamp plus a hash of you payload data is "signed" (HMAC-SHA256) with this secret, and this signature is checked on every request. This means that if someone would get access to your ID, they would not be able to upload any data to your account, because they would not be able to create a valid signature.
+This is a bit of extra protection. It's sent to the server with your first sync request, but should then never be sent again, and there is no way to read it back from the server or ever change it. But every upload to the server is timestamped, and the timestamp plus a hash of your payload data is "signed" (HMAC-SHA256) with this secret, and this signature is checked on every request. This means that if someone would get access to your ID, they would not be able to upload any data to your account, because they would not be able to create a valid signature.
 
 ## What's next?
 
-I will probably try to tweak the usability and look of the app, and maybe add some more features. If anyone is using it, and has any ideas for improvements or find any bugs, please open an [issue](https://github.com/foonly/bookmarks/issues) on GitHub.
+I will probably try to tweak the usability and look of the app, and maybe add some more features. If anyone is using it, and has any ideas for improvements or finds any bugs, please open an [issue](https://github.com/foonly/bookmarks/issues) on GitHub.

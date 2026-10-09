@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  HUGO_VERSION: "0.147.4"
+  HUGO_VERSION: "0.167.0"
 
 jobs:
   deploy:
@@ -36,7 +36,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H ${{ vars.DEPLOY_HOST }} >> ~/.ssh/known_hosts
+          echo "${{ vars.DEPLOY_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
 
       - name: Deploy via rsync
         run: |

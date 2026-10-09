@@ -255,7 +255,6 @@ main {
 }
 
 .main-nav a[aria-current="page"] {
-	color: var(--color-text);
 	font-weight: 600;
 }
 
@@ -415,6 +414,10 @@ main {
 	span {
 		margin-right: var(--space-2);
 	}
+}
+
+.single-project-links {
+	margin-top: var(--space-4);
 }
 
 /* -----------------------------------------------

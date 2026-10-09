@@ -16,14 +16,14 @@ The site uses vanilla CSS with custom properties for theming (including automati
 
 ## Prerequisites
 
-- [Hugo](https://gohugo.io/installation/) **v0.147.4+** (extended edition)
+- [Hugo](https://gohugo.io/installation/) **v0.158.0+** (extended edition)
 
 ## Getting Started
 
 ```sh
 # Clone the repository
-git clone https://github.com/<your-user>/foonly.git
-cd foonly
+git clone https://github.com/foonly/site.git
+cd site
 
 # Start the dev server
 hugo server -D
@@ -34,17 +34,15 @@ The site will be available at `http://localhost:1313/`.
 ## Project Structure
 
 ```
-foonly/
+site/
 ├── archetypes/          # Content templates for `hugo new`
 ├── assets/
 │   ├── css/main.css     # All styles (custom properties, reset, components)
-│   └── js/              # Client-side scripts
+│   └── js/main.js       # Client-side scripts (optional, not present yet)
 ├── content/
 │   ├── _index.md        # Home page content
 │   ├── posts/           # Blog posts
 │   └── projects/        # Project pages
-├── data/                # Data files (currently unused)
-├── i18n/                # Internationalisation strings
 ├── layouts/
 │   ├── _default/        # Base, home, list, single, and term templates
 │   ├── partials/        # Reusable partials (header, footer, menu, etc.)
@@ -85,6 +83,7 @@ The [deploy workflow](.github/workflows/deploy.yml) will:
 | Variable | `DEPLOY_HOST`    | Hostname / IP of the target server |
 | Variable | `DEPLOY_USER`    | SSH user on the target server      |
 | Variable | `DEPLOY_PATH`    | Absolute path to deploy into       |
+| Variable | `DEPLOY_KNOWN_HOSTS` | Server's SSH host key line(s), e.g. output of `ssh-keyscan <host>` |
 
 ## License
 

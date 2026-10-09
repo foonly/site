@@ -1,12 +1,21 @@
 # Changelog
 
+## 1.6.0 (2026-04-11)
+
+#### Features
+- content: Add post about AI coding (6413070)
+
+#### Documentation
+- Correct typos and grammar in content (72b08bb)
+- bookmarks: Correct GitHub spelling (c8da02e)
+
 ## 1.5.0 (2026-04-08)
 
 #### Features
 - foonver: Add foonver configuration file (9779309)
 - projects: Update bookmarks project details (fe41d2e)
 
-## v1.4.0 (2026-04-06)
+## 1.4.0 (2026-04-06)
 
 #### Features
 - projects: Add timer project page (bd2c55d)
@@ -15,13 +24,13 @@
 #### Maintenance
 - Add .hugo_build.lock to .gitignore (607c82a)
 
-## v1.3.0 (2026-04-02)
+## 1.3.0 (2026-04-02)
 
 #### Features
 - css: Improve project card link accessibility (b8e2c6b)
 - theme: Update CSS variables and add favicon (431fed3)
 
-## v1.2.0 (2026-04-01)
+## 1.2.0 (2026-04-01)
 
 #### Features
 - content: Update personal introduction and project motivation (0c90e1a)
@@ -36,7 +45,7 @@
 - Add foondot project rationale (b90244d)
 - Add README file for the personal website (33eb56d)
 
-## v1.1.0 (2026-03-31)
+## 1.1.0 (2026-03-31)
 
 #### Features
 - Add version file (5da165f)

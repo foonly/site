@@ -22,7 +22,7 @@ But here the problems start creeping in. The more you work like this, the less y
 
 After you have everything more or less as you want it, you start working on the polish. This is where I find the biggest problems.
 
-At this point you have a quite good image of what you want, but it can be difficult to explain as prompts. And by this I don't mean that you can't describe the tasks you want the AI to perform, but that it can sometimes feel like you're trying to make fine adjustments with a sledgehammer. You can get the AI to do what you want, but it will often do a lot more. Here I often find myself uncertain if I should go with my plan, or keep the new things the AI made in addition to what you wanted.
+At this point you have a quite good image of what you want, but it can be difficult to explain as prompts. And by this I don't mean that you can't describe the tasks you want the AI to perform, but that it can sometimes feel like you're trying to make fine adjustments with a sledgehammer. You can get the AI to do what you want, but it will often do a lot more. Here I often find myself uncertain if I should go with my plan, or keep the new things the AI made in addition to what I wanted.
 
 In order to get the project across the finish line, you need to start properly going through the code, but sometimes after you understand a part well, the AI just rewrites the whole section.
 
@@ -48,4 +48,4 @@ The big question in the end is probably if it's more efficient to code with AI? 
 
 I'm not quite sure what conclusions to draw from this. Is it a good thing or a bad thing? I don't think AI will make the world a better place, it's bad for the environment, it further transfers power to an ever shrinking group of people. But it also allows people to make things more easily. It's been very good for my hobby projects, you can actually get results even if you only have an hour or two to work on something.
 
-I think we need to take care not to get too dependent on the companies pushing this to us, but there is no closing this box anymore, so we need to make the best of it.
+I think we need to take care not to get too dependent on the companies pushing this on us, but there is no closing this box anymore, so we need to make the best of it.
