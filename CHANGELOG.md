@@ -1,65 +1,84 @@
 # Changelog
 
-## 1.6.0 (2026-04-11)
+### 1.6.1 (2026-10-09)
+
+#### Bug Fixes
+
+- Clean up templates, config, content and deploy (bd1cf48)
+
+## v1.6.0 (2026-04-11)
 
 #### Features
+
 - content: Add post about AI coding (6413070)
 
 #### Documentation
-- Correct typos and grammar in content (72b08bb)
-- bookmarks: Correct GitHub spelling (c8da02e)
 
-## 1.5.0 (2026-04-08)
+- bookmarks: Correct GitHub spelling (c8da02e)
+- Correct typos and grammar in content (72b08bb)
+
+## v1.5.0 (2026-04-08)
 
 #### Features
+
 - foonver: Add foonver configuration file (9779309)
 - projects: Update bookmarks project details (fe41d2e)
 
-## 1.4.0 (2026-04-06)
+## v1.4.0 (2026-04-06)
 
 #### Features
+
 - projects: Add timer project page (bd2c55d)
 - projects: Link tags to tag pages and refactor project card (17ec15c)
 
 #### Maintenance
+
 - Add .hugo_build.lock to .gitignore (607c82a)
 
-## 1.3.0 (2026-04-02)
+## v1.3.0 (2026-04-02)
 
 #### Features
+
 - css: Improve project card link accessibility (b8e2c6b)
 - theme: Update CSS variables and add favicon (431fed3)
 
-## 1.2.0 (2026-04-01)
+## v1.2.0 (2026-04-01)
 
 #### Features
+
 - content: Update personal introduction and project motivation (0c90e1a)
 - projects: Extract project card into partial and update date formatting (3ee4468)
 
 #### Bug Fixes
+
 - bookmarks: Correct typo in project description (725776b)
 - content: Correct typo in blog post title (a20e7f1)
 - config: Change language code from en-uk to en (f90fd9f)
 
 #### Documentation
+
 - Add foondot project rationale (b90244d)
 - Add README file for the personal website (33eb56d)
 
-## 1.1.0 (2026-03-31)
+## v1.1.0 (2026-03-31)
 
 #### Features
+
 - Add version file (5da165f)
 - Add initial content and projects (cce1d3d)
 - Initial Hugo setup and styling overhaul (57c1fad)
 
 #### Continuous Integration
+
 - github: Add deploy workflow (98876ea)
 
 #### Maintenance
+
 - Remove Copilot instructions file (2f0cb67)
 - remove unused VS Code settings and old package manager files (d9ade0f)
 
-### Misc
+#### Misc
+
 - Tailwind experiment (5d6869d)
 - Initial commit (113f1e3)
 
