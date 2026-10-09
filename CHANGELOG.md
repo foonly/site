@@ -1,6 +1,12 @@
 # Changelog
 
-### 1.6.1 (2026-10-09)
+## 1.7.0 (2026-10-09)
+
+#### Features
+
+- design: Redesign site with understated details (784a851)
+
+### v1.6.1 (2026-10-09)
 
 #### Bug Fixes
 
