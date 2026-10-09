@@ -1,11 +1,9 @@
 {{ define "main" }}
   <article>
     <header class="single-header">
-      <h1>{{ .Title }}</h1>
+      <h1{{ with .File }} style="view-transition-name: t-{{ .UniqueID }}"{{ end }}>{{ .Title }}</h1>
       <div class="single-meta">
-        {{- with .Params.status }}
-        <span class="status-badge status-{{ . }}">{{ . }}</span>
-        {{- end }}
+        {{- with .Params.status }}{{ partial "status.html" . }}{{ end }}
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
       </div>
       {{- if or .Params.repo .Params.live }}

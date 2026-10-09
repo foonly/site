@@ -14,7 +14,7 @@
     <ul class="post-list">
       {{- range $posts.ByDate.Reverse }}
       <li class="post-item">
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <a href="{{ .RelPermalink }}"{{ with .File }} style="view-transition-name: t-{{ .UniqueID }}"{{ end }}>{{ .LinkTitle }}</a>
         <div class="post-meta">
           <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
         </div>

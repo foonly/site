@@ -9,12 +9,12 @@
   <section class="section-preview">
     <div class="section-preview-header">
       <h2>Recent posts</h2>
-      <a href="{{ "/posts" | relURL }}" class="see-all">All posts →</a>
+      <a href="{{ "/posts" | relURL }}" class="see-all">All posts</a>
     </div>
     <ul class="post-list">
       {{- range $posts }}
       <li class="post-item">
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <a href="{{ .RelPermalink }}"{{ with .File }} style="view-transition-name: t-{{ .UniqueID }}"{{ end }}>{{ .LinkTitle }}</a>
         <div class="post-meta">
           <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
         </div>
@@ -29,7 +29,7 @@
   <section class="section-preview">
     <div class="section-preview-header">
       <h2>Projects</h2>
-      <a href="{{ "/projects" | relURL }}" class="see-all">All projects →</a>
+      <a href="{{ "/projects" | relURL }}" class="see-all">All projects</a>
     </div>
     <div class="project-grid">
       {{- range $projects }}

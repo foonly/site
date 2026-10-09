@@ -1,5 +1,5 @@
 <article class="project-card">
-  <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+  <h3><a href="{{ .RelPermalink }}"{{ with .File }} style="view-transition-name: t-{{ .UniqueID }}"{{ end }}>{{ .LinkTitle }}</a></h3>
   <p>{{ .Params.description | default .Summary }}</p>
   {{- with .GetTerms "tags" }}
   <ul class="tag-list">
@@ -7,9 +7,7 @@
   </ul>
   {{- end }}
   <div class="project-links">
-    {{- with .Params.status }}
-    <span class="status-badge status-{{ . }}">{{ . }}</span>
-    {{- end }}
+    {{- with .Params.status }}{{ partial "status.html" . }}{{ end }}
     {{- with .Params.repo }}<a href="{{ . }}">Repository</a>{{ end }}
     {{- with .Params.live }}<a href="{{ . }}">Live site</a>{{ end }}
   </div>

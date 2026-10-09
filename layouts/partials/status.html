@@ -1,0 +1,7 @@
+{{- /*
+Renders a project status as a progress pie with a label.
+
+@context {string} . The status: active, wip or archived.
+*/}}
+{{- $labels := dict "active" "active" "wip" "in progress" "archived" "archived" }}
+<span class="status-badge status-{{ . }}">{{ index $labels . | default . }}</span>
